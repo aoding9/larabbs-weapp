@@ -9,11 +9,18 @@
 import wepy from '@wepy/core'
 import eventHub from './common/eventHub'
 import vuex from '@wepy/x'
+// wepy提供的将响应包装成promise的包
+import promisify  from '@wepy/use-promisify';
 
 wepy.use(vuex)
+wepy.use(promisify);
+
 
 wepy.app({
   onLaunch() {
+    wepy.wx.login().then(res => {
+      console.log('login: ', res)
+    })
   },
   methods: {
   }
