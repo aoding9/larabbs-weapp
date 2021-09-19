@@ -12,7 +12,7 @@
   },
   "wepy": {
     "module-a": false,
-    "./src/components/list": ".\\src\\components\\wepy-list.wpy"
+    "./src/components/list": "./src/components/wepy-list.wpy"
   },
   "author": "aoding9 <xy5217733@163.com>",
   "license": "MIT",

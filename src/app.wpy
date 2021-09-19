@@ -1,4 +1,8 @@
 <style lang="less">
+@import (css) './assets/style/app.wxss';
+.page{
+  background-color: #FFFFFF;
+}
 </style>
 
 <script>
@@ -17,30 +21,30 @@ wepy.app({
 </script>
 <config>
 {
-  "pages": [
-    "ages/index",
-    "pages/user"
+  pages: [
+    'pages/index',
+    'pages/user'
   ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+  window: {
+    backgroundTextStyle: 'light',
+    navigationBarBackgroundColor: '#fff',
+    navigationBarTitleText: 'WeChat',
+    navigationBarTextStyle: 'black'
   },
-  "tabBar": {
-    "list": [{
-      "pagePath": "pages/index",
-      "text": "首页",
-      "iconPath": "assets/images/index.png",
-      "selectedIconPath": "assets/images/index_selected.png"
+  tabBar: {
+    list: [{
+      pagePath: 'pages/index',
+      text: '首页',
+      iconPath: 'assets/images/index.png',
+      selectedIconPath: 'assets/images/index_selected.png'
     }, {
-      "pagePath": "pages/user",
-      "text": "我的",
-      "iconPath": "assets/images/user.png",
-      "selectedIconPath": "assets/images/user_selected.png"
+      pagePath: 'pages/user',
+      text: '我的',
+      iconPath: 'assets/images/user.png',
+      selectedIconPath: 'assets/images/user_selected.png'
     }],
-    "color": "#707070",
-    "selectedColor": "#00b5ad"
+    color: '#707070',
+    selectedColor: '#00b5ad'
   }
 }
 </config>
