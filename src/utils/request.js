@@ -2,7 +2,8 @@ import wepy from '@wepy/core';
 import store from '@/store'
 
 // 服务器接口地址
-const host = 'http://larabbs.test/api/';
+const host = 'http://union.com/api/v1/';
+// const host = 'http://larabbs.test/api/';
 // const host = 'http://larabbs.test/api/v1/'
 
 // 普通请求

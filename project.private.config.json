@@ -1,0 +1,30 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/index",
+                    "pathName": "pages/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/union",
+                    "pathName": "pages/union",
+                    "query": "",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

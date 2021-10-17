@@ -21,6 +21,15 @@
 </div>
 </template>
 
+<config>
+{
+  "navigationBarTitleText": "wepy",
+  "usingComponents": {
+    
+  }
+}
+</config>
+
 <script>
   import wepy from '@wepy/core'
 

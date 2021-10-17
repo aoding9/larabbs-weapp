@@ -21,7 +21,7 @@
         "lazyloadPlaceholderEnable": false,
         "useMultiFrameRuntime": true,
         "useApiHook": true,
-        "useApiHostProcess": false,
+        "useApiHostProcess": true,
         "babelSetting": {
             "ignore": [],
             "disablePlugins": [],
@@ -37,7 +37,7 @@
     },
     "compileType": "miniprogram",
     "appid": "wxf2c185843930c376",
-    "projectname": "larabbs-weapp",
+    "projectname": "union-weapp",
     "miniprogramRoot": "weapp/",
     "condition": {}
 }
