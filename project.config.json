@@ -21,7 +21,7 @@
         "lazyloadPlaceholderEnable": false,
         "useMultiFrameRuntime": true,
         "useApiHook": true,
-        "useApiHostProcess": false,
+        "useApiHostProcess": true,
         "babelSetting": {
             "ignore": [],
             "disablePlugins": [],
@@ -33,7 +33,8 @@
         "packNpmManually": false,
         "packNpmRelationList": [],
         "minifyWXSS": false,
-        "showES6CompileOption": false
+        "showES6CompileOption": false,
+        "minifyWXML": true
     },
     "compileType": "miniprogram",
     "appid": "wxf2c185843930c376",
