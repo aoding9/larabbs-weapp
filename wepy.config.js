@@ -11,7 +11,8 @@ module.exports = {
   resolve: {
     alias: {
       counter: path.join(__dirname, 'src/components/counter'),
-      '@': path.join(__dirname, 'src')
+      '@': path.join(__dirname, 'src'),
+      iview:path.join(__dirname,'src/components/iview')
     },
     aliasFields: ['wepy', 'weapp'],
     modules: ['node_modules']

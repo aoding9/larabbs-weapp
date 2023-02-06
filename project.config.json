@@ -38,7 +38,7 @@
     },
     "compileType": "miniprogram",
     "appid": "wxf2c185843930c376",
-    "projectname": "larabbs-weapp",
+    "projectname": "union-weapp",
     "miniprogramRoot": "weapp/",
     "condition": {}
 }

@@ -1,58 +1,62 @@
 <style lang="less">
 @import (css) './assets/style/app.wxss';
-.page{
-  background-color: #FFFFFF;
-}
+@import (css) './assets/style/my.wxss';
+
 </style>
 
 <script>
-import wepy from '@wepy/core'
-import eventHub from './common/eventHub'
-import vuex from '@wepy/x'
+import wepy from '@wepy/core';
+import eventHub from './common/eventHub';
+import vuex from '@wepy/x';
 // wepy提供的将响应包装成promise的包
-import promisify  from '@wepy/use-promisify';
+import promisify from '@wepy/use-promisify';
 
-wepy.use(vuex)
+wepy.use(vuex);
 wepy.use(promisify);
-
 
 wepy.app({
   onLaunch() {
-    wepy.wx.login().then(res => {
-      console.log('login: ', res)
-    })
+    wepy.wx.login().then((res) => {
+      console.log('login: ', res);
+    });
   },
-  methods: {
-  }
-})
+  methods: {},
+});
 </script>
 <config>
 {
-  pages: [
-    'pages/index',
-    'pages/user',
-    'pages/auth/login'
+  "pages": [
+    "pages/index",
+    "pages/user",
+    "pages/auth/login",
+    "pages/union",
+    "pages/store/index",
   ],
-  window: {
-    backgroundTextStyle: 'light',
-    navigationBarBackgroundColor: '#fff',
-    navigationBarTitleText: 'WeChat',
-    navigationBarTextStyle: 'black'
+  "window": {
+    "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#2196F3",
+        "navigationBarTitleText": "武陵区智慧工会",
+        "navigationBarTextStyle": "white"
   },
-  tabBar: {
-    list: [{
-      pagePath: 'pages/index',
-      text: '首页',
-      iconPath: 'assets/images/index.png',
-      selectedIconPath: 'assets/images/index_selected.png'
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index",
+      "text": "首页",
+      "iconPath": "assets/images/index.png",
+      "selectedIconPath": "assets/images/index_selected.png"
     }, {
-      pagePath: 'pages/user',
-      text: '我的',
-      iconPath: 'assets/images/user.png',
-      selectedIconPath: 'assets/images/user_selected.png'
+      "pagePath": "pages/store/index",
+      "text": "优惠商家",
+      "iconPath": "assets/images/user.png",
+      "selectedIconPath": "assets/images/user_selected.png"
+    }, {
+      "pagePath": "pages/user",
+      "text": "我的",
+      "iconPath": "assets/images/user.png",
+      "selectedIconPath": "assets/images/user_selected.png"
     }],
-    color: '#707070',
-    selectedColor: '#00b5ad'
+    "color": "#707070",
+    "selectedColor": "#00b5ad"
   }
 }
 </config>

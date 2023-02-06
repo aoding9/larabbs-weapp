@@ -35,7 +35,7 @@ const actions = {
 
     dispatch('getUser');
   },
-  
+
   async logout({ commit, state }) {
     await logout(state.accessToken);
 

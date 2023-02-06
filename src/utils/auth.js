@@ -2,7 +2,7 @@ export function getUser() {
   return wx.getStorageSync('user')
 }
 
-export function setUser(user, perms) {
+export function setUser(user, parms) {
   return wx.setStorageSync('user', user)
 }
 
